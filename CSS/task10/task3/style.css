@@ -1,0 +1,125 @@
+
+/**task3*/
+.parent {
+    margin: auto;
+    width: 550px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ch {
+    background-color: #edecec;
+    height:250px;
+    width: 45%;
+    display: inline-block;
+    position: relative;
+    margin: 10px
+}
+.basic ,
+.pro{ 
+    background-color:deepskyblue;
+    color:white;
+    padding: 10px 70px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+
+.free ,
+.dollar {
+    background-color: #dedada;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    left: 60px
+}
+.free::before ,
+.dollar::before {
+    content: attr(content);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 30px;
+    
+}
+.pro::after {
+    content: "";
+    width: 2px;
+    height: 250px;
+    background-color: deepskyblue;
+    position: absolute;
+    left: -22px;
+    top: -9px;
+}
+.basic::after {
+    content: "Or";
+    background-color: deepskyblue;
+    padding: 2px ;
+    border-radius: 50%;
+    position: absolute;
+    left: 239px;
+    top: 110px;
+    z-index: 1;
+
+}
+
+/* *task3 another solution */
+.par {
+    width: 550px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+.ch1,
+.ch2 {
+    display: inline-block;
+    background-color: #dedada;
+    margin: 10px;
+    width: 45%;
+}
+
+.bas,
+.pr {
+    background-color: deepskyblue;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.fre,
+.dol {
+    background-color: #c2c1c1;
+    width: 150px;
+    height: 150px;
+    font-size: 30px;
+    margin: 10px auto;
+    border-radius: 50%;
+    line-height: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.ch2::before {
+    content: " ";
+    position: absolute;
+    left: 49%;
+    height: 220px;
+    background-color: deepskyblue;
+    width: 3px;
+}
+
+.ch1::after {
+    content: 'or';
+    background-color: deepskyblue;
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 48%;
+    padding: 3px;
+    border-radius: 50%;
+    z-index: 1;
+}
