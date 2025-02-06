@@ -1,0 +1,33 @@
+
+/**task3*/
+p {
+    width: 500px;
+    text-transform: capitalize;
+    background-color: #eee;
+    border-left: 5px solid #d90707;
+    font-family: sans-serif;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    left: 100px;
+    
+}
+p::before{
+    content: attr(data-person);
+    padding: 10px;
+    background-color: #eee;
+    margin:10px;
+    position: relative;
+    left: -25%;
+    
+}
+p::after {
+    content: "";
+    border: 10px solid;
+    border-color: transparent #d90707 transparent transparent;
+    position: absolute;
+    left: -23px;
+    top: 30%;
+    width:0;
+    height: 0;
+}
