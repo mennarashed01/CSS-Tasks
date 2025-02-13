@@ -1,0 +1,47 @@
+div {
+    width: 600px;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 9px;
+    background-color: #eee;
+    padding: 15px 0;
+    position: relative;
+    border-left: 7px solid #c63a3a ;
+    border-right: 7px solid #b010b0 ;
+}
+div::before {
+    content: '';
+    width: 600px;
+    height: 7px;
+    background-color: blue;
+    background-image: linear-gradient(to right,
+                    #c63a3a 0% 20%,
+                    rgba(16, 16, 202, 0.462) 20% 40%,
+                    green 40% 60%,
+                    #f797a7 60% 80%,
+                    #b010b0 80% 60%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div::after {
+    content: '';
+    width: 600px;
+    height: 7px;
+    background-color: blue;
+    background-image: linear-gradient(to right,
+            #c63a3a 0% 20%,
+            rgba(16, 16, 202, 0.462) 20% 40%,
+            green 40% 60%,
+            #f797a7 60% 80%,
+            #b010b0 80% 60%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+div::first-letter {
+    color: rgba(204, 0, 0, 0.871);
+}

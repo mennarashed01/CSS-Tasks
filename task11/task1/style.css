@@ -1,0 +1,27 @@
+div {
+    text-align: center;
+        text-transform: capitalize;
+}
+.parent {
+    width: 300px;
+    height: 150px;
+    background-color:#efefef; 
+    padding: 20px;
+    margin: 20px;
+}
+.child {
+    padding: 10px;
+    margin: 10px;
+    background-color:#d7d6d6;
+}
+.parent:hover {
+    position: relative;
+    top: -10px;
+    transition: all .5s;
+    .child {
+        position: relative;
+        top : 20px;
+        left: 10px;
+        transition: all .5s .5s ;
+    }
+}

@@ -1,0 +1,36 @@
+:root {
+    --color: #fff;
+}
+div {
+    margin: 50px auto;
+    width: fit-content;
+    height: 200px;
+    margin-top: 110px;
+    width: 200px;
+    height: 200px;
+    background-color: #607d8b;
+    border-bottom: 5px solid black;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+div::before {
+    content: "";
+    background-color: black;
+    width: 69.8%;
+    height: 69.8%;
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    transform: rotate(44.5deg) translate(-50%, -50%);
+    position: absolute;
+    left: 30.5px;
+    top: 30.5px;
+}
+
+div::after {
+    content: "Elzero";
+    color: var(--color);
+    font-weight: bold;
+    padding-left: 10px;
+}

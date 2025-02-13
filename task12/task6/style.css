@@ -1,0 +1,60 @@
+:root {
+    --bg-color:#b4b4b4;
+    --space: 10px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#cbcbcb;
+}
+.page {
+    padding: var(--space);
+    margin: var(--space);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space);
+    margin: var(--space);
+}
+.header .logo {
+    background-color: var(--bg-color);
+    padding: var(--space);
+    margin-right: 10px ;
+}
+.header .links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    width: 100%;
+    list-style: none;
+    background: var(--bg-color);
+    padding: var(--space);
+}
+.main-area {
+    display: flex;
+    gap: 10px;
+    padding: var(--space);
+    margin: var(--space);
+    height: 350px;
+}
+.main-area .content {
+    padding: var(--space);
+    width: 60%;
+    background-color: var(--bg-color);
+}
+.main-area .sidebar {
+    padding: var(--space);
+    background-color: var(--bg-color);
+    width: 40%;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    padding: var(--space);
+    margin: calc(7px + var(--space));
+}

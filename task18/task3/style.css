@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+.baby ,
+.parent div div{
+    margin-right: 10px;
+    font-size: 30px;
+    padding: 10px;
+    text-align: right;
+}
+.parent:nth-of-type(2) div:only-child {
+    color: red;
+    font-weight: bold;
+}

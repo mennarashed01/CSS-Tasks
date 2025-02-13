@@ -1,0 +1,28 @@
+
+:root {
+    --main-color: #fff;
+    --background: #20b2aa;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    width: 200px;
+    color: var(--main-color);
+    padding: 15px 0px 25px 15px;
+    position: relative;
+    margin: auto;
+}
+h1::before {
+    content: "";
+    background-color: var(--background);
+    border-right: solid 10px var(--main-color);
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    transform: skew(25deg);
+}

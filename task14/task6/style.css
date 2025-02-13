@@ -1,0 +1,68 @@
+/** don't use margin , width, height, flex-basis only css grid */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 ,
+h5{
+    text-transform: capitalize;
+    
+}
+h3, p, h2,h5 {
+    padding: 5px 10px;
+}
+.layout {
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+    "one one two three"
+    "four five five three"
+    "four six six three"
+    "seven eight nine ten";
+    gap: 10px;
+    padding: 10px;
+}
+.layout div {
+    border-bottom: 4px rgb(175, 133, 26) solid;
+    padding: 10px;
+    background-color: #fff;
+}
+.one {
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+    background-color: #000 !important;
+    color: #fff;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+    background-color: #000 !important;
+    color: #fff;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+    background-color: #000 !important;
+    color: #fff;
+}
+.nine {
+    grid-area: nine;
+}
+.ten {
+    grid-area: ten;
+}

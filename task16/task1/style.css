@@ -1,0 +1,33 @@
+h1 {
+    width: 150px;
+    margin: 50px  auto;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+h1::after {
+    content: '';
+    background-color: orangered;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: -75%;
+    right: 0;
+    transform:  skew(10deg , 10deg);
+    z-index: -1;
+}
+h1::before {
+    content: '';
+    background-color: orangered;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: -75%;
+    right: 0;
+    transform:  skew(-10deg , -10deg);
+    z-index: -1;
+    -webkit-transform:  skew(-10deg , -10deg);
+    -moz-transform:  skew(-10deg , -10deg);
+    -ms-transform:  skew(-10deg , -10deg);
+    -o-transform:  skew(-10deg , -10deg);
+}

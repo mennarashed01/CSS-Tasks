@@ -1,0 +1,38 @@
+* {
+    margin: 0 ;
+    padding: 0; 
+    box-sizing: border-box;
+}
+.parent {
+    width: 600px;
+    margin: 10px auto;
+    
+}
+div {
+    position: relative;
+}
+input {
+    text-transform: capitalize;
+    padding: 15px;
+    margin: 5px;
+    width: 600px;
+    font-size: 18px;
+    background-color:#eeeeee;
+    border: none;
+    outline: none;
+    caret-color:  red;
+    filter: opacity(.6);
+
+}
+input:focus {
+    filter: opacity(1);
+}
+div::after {
+    content: '';
+    background-image: linear-gradient(to right, #f44336 50%, #4caf 50%, #4caf 100%);
+    width: 600px;
+    height: 4PX;
+    position: absolute;
+    left: 5px;
+    bottom: 2px;
+}
